@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="textInput2" type="text" placeholder="Бичээд Enter дар" />
+    <div id="output2"></div>
+
+    <script>
+      const input2 = document.getElementById("textInput2");
+      const output2 = document.getElementById("output2");
+
+      input2.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          const v = input2.value;
+          output2.textContent = v || "Текст хоосон байна";
+          input2.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+#users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 100px;
+}
+strong {
+  font-size: 30px;
+}
+p {
+  color: grey;
+  font-size: 55px;
+}
+
+img {
+  border-radius: 50%;
+  background-color: black;
+}
+
+span {
+  color: grey;
+}
+
+div {
+  border-radius: 1px solid black;
+}

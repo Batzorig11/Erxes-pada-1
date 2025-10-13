@@ -8,14 +8,15 @@ const main = async () => {
   data.results.forEach((movie) => {
     const container = document.getElementById("container");
     const divSmall = document.createElement("div");
+    divSmall.className = "small-div";
 
-    divSmall.innerHTML = `<div class="small-div">
+    divSmall.innerHTML = `
     <img class="image" src="${baseUrl + movie.poster_path}">
     <div class="movie-info">
-    <p class="title">${movie.title}</p>
+    <h3 class="title">${movie.title}</h3>
     <p class="release_date">${movie.release_date.split("-")[0]}</p>
-    <p class="vote_count">${Math.floor(movie.vote_average)}</p>
-    <p class="overview">${movie.overview}</p></div></div>`;
+    <p class="vote_count">★ ${movie.vote_average.toFixed(1)}</p>
+    <p class="overview">${movie.overview}</p></div>`;
 
     container.appendChild(divSmall);
   });

@@ -18,3 +18,7 @@ const main = async () => {
 };
 
 main();
+
+document.addEventListener("keydown", function (event) {
+  if (event.key == "Enter") main();
+});

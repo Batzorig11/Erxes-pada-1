@@ -6,7 +6,8 @@ const main = async () => {
   );
   const data = await response.json();
   console.log(data);
-  results.innerHTML = `Weather : ${data.weather[0].main}
+  results.innerHTML = `%
+  Weather : ${data.weather[0].main}
   Temperature : ${data.main.temp} &#176;C
   Wind Speed : ${data.wind.speed}m/s`;
   console.log(city);

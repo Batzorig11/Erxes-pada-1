@@ -3,23 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Weather App</h1>
-      <div>
-        <input id="city" type="text" placeholder="Enter City Name" />
-        <button onclick="main()" class="search">search</button>
+    <h1>Weather App</h1>
+
+    <div>
+      <input type="text" name="" id="input" /><button id="button">
+        Search
+      </button>
+    </div>
+    <div id="sun-shower" class="icon sun-shower">
+      <div class="cloud"></div>
+      <div class="sun">
+        <div class="rays"></div>
       </div>
-      <div class="container2">
-        <div class="data" id="result1"></div>
-        <div class="data" id="result2"></div>
-        <div class="data" id="result3"></div>
-        <div class="data" id="result4"></div>
+      <div class="rain"></div>
+    </div>
+
+    <div class="icon thunder-storm">
+      <div class="cloud"></div>
+      <div class="lightning">
+        <div class="bolt"></div>
+        <div class="bolt"></div>
       </div>
     </div>
-    <script src="main.js"></script>
+
+    <div class="icon cloudy">
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+    </div>
+
+    <div class="icon flurries">
+      <div class="cloud"></div>
+      <div class="snow">
+        <div class="flake"></div>
+        <div class="flake"></div>
+      </div>
+    </div>
+
+    <div class="icon sunny">
+      <div class="sun">
+        <div class="rays"></div>
+      </div>
+    </div>
+
+    <div class="icon rainy">
+      <div class="cloud"></div>
+      <div class="rain"></div>
+    </div>
+
+    <p>
+      Based on
+      <a
+        href="https://dribbble.com/shots/2097042-Widget-Weather"
+        target="_blank"
+        >Dribbble</a
+      >
+      by kylor
+    </p>
   </body>
 </html>

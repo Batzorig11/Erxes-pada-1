@@ -1,6 +1,6 @@
 const main = async () => {
-  const city = document.getElementById("city").value;
-  const result = document.getElementById("result");
+  const input = document.getElementById("input").value;
+  const button = document.getElementById("button");
   const result1 = document.getElementById("result1");
   const result2 = document.getElementById("result2");
   const result3 = document.getElementById("result3");

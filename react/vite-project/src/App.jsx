@@ -1,29 +1,22 @@
-import { useState } from "react";
 import "./App.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/home";
+import { About } from "./Pages/about";
+import { Layout } from "./Layout";
 
 function App() {
-  const [number, setNumber] = useState();
-  const [result, setResult] = useState();
   return (
-    <div>
-      <input
-        onChange={(e) => {
-          setNumber(e.target.value);
-        }}
-        type="number"
-      />
-      ;
-      <button
-        onClick={() => {
-          if (number % 2 === 0) {
-            setResult("tegsh");
-          } else setResult("sondgoi");
-        }}
-      >
-        Enter
-      </button>
-      <p>{result}</p>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route>
+            <Route element={<Layout />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 

@@ -4,33 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      Greatest number =
-      <span style="font-weight: bold" id="demo">1</span>
+    <div class="container">
+      <div>
+        <button>
+          <img src="" />
+          Takuya Matsuyama
+        </button>
+        <button>Works</button>
+        <button>Wallpaper</button>
+        <button>Posts</button>
+        <button>Uses</button>
+        <button>
+          <img src="" />
+          Source
+        </button>
+        <button>
+          <img src="" alt="" />
+        </button>
+      </div>
     </div>
-    <script>
-      function greatestNumber(a, b, c) {
-        if (a > b) {
-          if (a > c) {
-            console.log(a);
-            document.getElementById("demo").innerText = a;
-          } else {
-            console.log(c);
-            document.getElementById("demo").innerText = c;
-          }
-        } else {
-          if (b > c) {
-            console.log(b);
-            document.getElementById("demo").innerText = b;
-          } else {
-            console.log(c);
-            document.getElementById("demo").innerText = c;
-          }
-        }
-      }
-      greatestNumber(100, 2000, 1000);
-    </script>
   </body>
 </html>

@@ -1,3 +1,3 @@
 export default function Uses() {
-  return <div>Uses Page</div>;
+  return <div className="empty">Uses Page is coming soon...</div>;
 }

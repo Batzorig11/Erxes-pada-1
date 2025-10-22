@@ -1,3 +1,3 @@
 export default function Works() {
-  return <div>Works Page</div>;
+  return <div className="empty">Works Page is coming soon...</div>;
 }

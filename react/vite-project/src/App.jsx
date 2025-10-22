@@ -11,7 +11,7 @@ import Header from "./Components/Header";
 
 function App() {
   return (
-    <div>
+    <div className="appContainer">
       <Header />
 
       <Routes>

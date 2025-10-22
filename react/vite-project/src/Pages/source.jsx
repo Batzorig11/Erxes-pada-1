@@ -1,3 +1,3 @@
 export default function Source() {
-  return <div>Source Page</div>;
+  return <div className="empty">Source Page is coming soon...</div>;
 }

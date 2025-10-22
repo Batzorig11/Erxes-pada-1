@@ -1,3 +1,3 @@
 export default function Wallpaper() {
-  return <div>Wallpaper Page</div>;
+  return <div className="empty">Wallpaper Page is coming soon...</div>;
 }

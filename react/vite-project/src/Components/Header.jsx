@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
 
 export default function Header() {
   return (
-    <div>
+    <div className="header">
       <Link to="/">
-        <button>
-          <img src="logo" />
+        <button className="bold">
+          <img src="/paw-xxl.png" />
           Takuya Matsuyama
         </button>
       </Link>
@@ -28,9 +27,7 @@ export default function Header() {
           Source
         </button>
       </Link>
-      <button className="mode">
-        <img src="" alt="" />
-      </button>
+      <button className="mode"></button>
     </div>
   );
 }

@@ -8,8 +8,6 @@ html *:after {
 }
 
 body {
-  max-width: 42em;
-  padding: 2em;
   margin: 0 auto;
   color: #161616;
   font-family: "Roboto", sans-serif;
@@ -34,6 +32,13 @@ input {
   border-radius: 0.25em;
   text-align: center;
 }
+
+#results {
+  margin-top: 1.375em;
+  color: #fff;
+  font-size: 1.25em;
+}
+
 button {
   font: inherit;
   font-weight: 100;
@@ -55,7 +60,7 @@ p {
 }
 
 #container {
-  visibility: hidden;
+  display: none;
 }
 
 .icon {

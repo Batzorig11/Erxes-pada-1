@@ -6,11 +6,17 @@ export default function Header() {
       <Link href={"/"}>
         <div>Home</div>
       </Link>
-      <Link href={"/contact"}>
-        <div>Contact</div>
-      </Link>
       <Link href={"/about"}>
         <div>About</div>
+      </Link>
+      <Link href={"/experience"}>
+        <div>Experience</div>
+      </Link>
+      <Link href={"/work"}>
+        <div>Work</div>
+      </Link>
+      <Link href={"/contact"}>
+        <div>Contact</div>
       </Link>
     </div>
   );
